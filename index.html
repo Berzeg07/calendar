@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" class="formloan">
+        <div class="formloan__title">Запись на получение ключей</div>
+        <div class="formloan__top">
+            <input class="formloan__inp formloan__inp-name" type="text" placeholder="ФИО">
+            <input class="formloan__inp formloan__inp-phone" type="text" placeholder="+7 (___) ___ - __ - __">
+            <input class="formloan__inp formloan__inp-email" type="text" placeholder="E-mail">
+        </div>
+        <div class="formloan__middle">
+            <div class="formloan__column">
+                <div class="formloan__sub-title">
+                    <img src="img/date-icon.png" width="24" height="24">
+                    <span>Выберите дату:</span>
+                </div>
+                <div class="calendar">
+                    <table class="calendar-table" id="calendar" border="0" cellspacing="0" cellpadding="1">
+                        <thead>
+                            <tr>
+                                <td><b><img src="img/arrow-l.png" width="24" height="24"></b>
+                                <td colspan="5">
+                                <td><b><img src="img/arrow-r.png" width="24" height="24"></b>
+                            <tr>
+                                <td>Пн
+                                <td>Вт
+                                <td>Ср
+                                <td>Чт
+                                <td>Пт
+                                <td>Сб
+                                <td>Вс</td>
+                        </thead>
+                        <tbody class="calendar__body"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="formloan__column">
+                <div class="formloan__sub-title">
+                    <img src="img/time-icon.png" width="24" height="24">
+                    <span>Выберите время:</span>
+                </div>
+                <ul class="formloan__list">
+                    <li>
+                        <div class="formloan__time">10:00</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">10:30</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">11:00</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">11:30</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">12:00</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">12:30</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">13:00</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">13:30</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">14:00</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">14:30</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">15:00</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">15:30</div>
+                    </li>
+                    <li>
+                        <div class="formloan__time">16:00</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="formloan__bottom">
+            <div class="formloan__column">
+                <button class="formloan__btn" type="submit">Отправить заявку</button>
+            </div>
+            <div class="formloan__column">
+                <div class="checkblock">
+                    <input class="checkhidden" type="checkbox" id="checkprivacy" checked>
+                    <label class="checklabel" for="checkprivacy">
+                        <span>
+                            Я согласен на обработку<br>
+                            персональных данных
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
